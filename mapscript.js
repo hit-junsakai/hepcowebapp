@@ -1,4 +1,4 @@
-var map;
+﻿var map;
 var marker = [];
 var data = [];
 var windows = [];
@@ -23,16 +23,12 @@ function initialize() {
   var data_layer8 = new google.maps.Data({map: map});
   var data_layer9 = new google.maps.Data({map: map});
   var data_layer10 = new google.maps.Data({map: map});
-  data_layer1.loadGeoJson('./chuo.json');
-  data_layer2.loadGeoJson('./kita.json');
-  data_layer3.loadGeoJson('./minami.json');
-  data_layer4.loadGeoJson('./ashibetsu.json');
-  data_layer5.loadGeoJson('./higashi.json');
-  data_layer6.loadGeoJson('./kiyota.json');
-  data_layer7.loadGeoJson('./nishi.json');
-  data_layer8.loadGeoJson('./teine.json');
-  data_layer9.loadGeoJson('./shiroishi.json');
-  data_layer10.loadGeoJson('./toyohira.json');
+  data_layer1.loadGeoJson('./sapporo.json');
+  data_layer2.loadGeoJson('./east.json');
+  data_layer3.loadGeoJson('./west.json');
+  data_layer4.loadGeoJson('./south.json');
+  data_layer5.loadGeoJson('./north.json');
+
   data_layer1.setStyle({
     fillColor: 'pink',
     strokeWeight: 2
@@ -53,26 +49,7 @@ function initialize() {
     fillColor: 'cyan',
     strokeWeight: 2
   });
-  data_layer6.setStyle({
-    fillColor: 'brown',
-    strokeWeight: 2
-  });
-  data_layer7.setStyle({
-    fillColor: 'purple',
-    strokeWeight: 2
-  });
-  data_layer8.setStyle({
-    fillColor: 'yellowgreen',
-    strokeWeight: 2
-  });
-  data_layer9.setStyle({
-    fillColor: 'orange',
-    strokeWeight: 2
-  });
-  data_layer10.setStyle({
-    fillColor: 'powderBlue',
-    strokeWeight: 2
-  });
+
 
   // put markers
   $.getJSON("./branch.json", function(json){
