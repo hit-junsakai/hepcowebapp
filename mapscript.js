@@ -9,7 +9,9 @@ function initialize() {
   map = new google.maps.Map(document.getElementById('map-canvas'), {
     zoom: 11,
     center: {lat: 43.001698, lng: 141.357699},
+    fitBounds: true,
     mapTypeId : google.maps.MapTypeId.ROADMAP
+      
   });
 
   // Load a GeoJSON from the same server as our demo.
@@ -58,8 +60,10 @@ function initialize() {
         {
            'name': json[i].name,
            'address': json[i].address,
+           'url': json[i].url,
            'lat': json[i].lat,
            'lng': json[i].lng
+            
         }
       );
     };
@@ -74,7 +78,7 @@ function initialize() {
       windows[i] = new google.maps.InfoWindow({ // 吹き出しの追加
         content: '<div style="width: 220px;"><p>[支店名] ' + data[i]['name'] + '</p>'+
                  '<p>[住所] ' + data[i]['address'] + '</p>' +
-                 '<input type="button" value="この場所の詳細"/>'
+                 '<a href="' + data[i]['url'] + '"/>詳しくはこちら</a>'
                  // 吹き出しに表示する内容
       });
       markerEvent(i); // マーカーにクリックイベントを追加

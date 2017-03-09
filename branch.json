@@ -2,30 +2,35 @@
     {
         "name": "札幌支店",
         "address": "〒060‐8639 札幌市中央区大通東1丁目2番地",
+        "url": "http://www.hepco.co.jp/cgi-bin/branch/branch_info.cgi?branch_type=1&area_para=1&branch_code=S3200000",
         "lat": 43.061698,
         "lng": 141.357699
     },
     {
         "name": "札幌北支社",
         "address": "〒002‐8022 札幌市北区篠路2条2丁目8番18号",
+        "url": "http://www.hepco.co.jp/cgi-bin/branch/branch_info.cgi?branch_type=2&area_para=1&branch_code=S3200100http://www.hepco.co.jp/cgi-bin/branch/branch_info.cgi?branch_type=2&area_para=1&branch_code=S3200100",
         "lat": 43.144813,
         "lng": 141.353446
     },
     {
         "name": "札幌西支社",
         "address": "〒063‐0052 札幌市西区宮の沢2条4丁目7番15号",
+        "url": "http://www.hepco.co.jp/cgi-bin/branch/branch_info.cgi?branch_type=2&area_para=1&branch_code=S3200200",
         "lat": 43.092596, 
         "lng": 141.265564
     },
     {
         "name": "札幌東支社",
         "address": "〒004‐8691 札幌市厚別区厚別中央1条5丁目1番30号",
+        "url": "http://www.hepco.co.jp/cgi-bin/branch/branch_info.cgi?branch_type=2&area_para=1&branch_code=S3200300",
         "lat": 43.036306,
         "lng": 141.471356
     },
     {
         "name": "札幌南支社",
         "address": "〒005‐0812 札幌市南区川沿12条1丁目1番1号",
+        "url": "http://www.hepco.co.jp/cgi-bin/branch/branch_info.cgi?branch_type=2&area_para=1&branch_code=S3200400",
         "lat": 42.981476,
         "lng": 141.336598
     }
