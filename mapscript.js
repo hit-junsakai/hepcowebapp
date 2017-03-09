@@ -81,7 +81,8 @@ function initialize() {
                  '<a href="' + data[i]['url'] + '"/>詳しくはこちら</a>'
                  // 吹き出しに表示する内容
       });
-      markerEvent(i); // マーカーにクリックイベントを追加
+      var movePos = new google.maps.LatLng(data[i]['lat'],data[i]['lng']); 
+      markerEvent(i,movePos); // マーカーにクリックイベントを追加
 
     }
 
@@ -90,13 +91,14 @@ function initialize() {
 }
 
 //マーカーにクリックイベントを追加
-function markerEvent(i) {
+function markerEvent(i,movePos) {
   marker[i].addListener('click', function() { // マーカーをクリックし たとき
     if (currentInfoWindow) {
       currentInfoWindow.close();
     }
     windows[i].open(map, marker[i]); // 吹き出しの表示
     currentInfoWindow = windows[i];
+    map.panTo(movePos); 
   });
 }
 
