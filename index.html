@@ -14,6 +14,10 @@
         margin: 5px;
         padding: 0px 
       }
+			body {
+			  padding-top: 70px;
+			  padding-bottom:70px;
+			}
       .panel-heading {
          cursor: pointer;
       }
@@ -37,7 +41,31 @@
     <script type="text/javascript" src="mapscript.js"></script>
   </head>
   <body>
-    <h2>営業所マップDemo(本番)</h2>
+
+
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <!-- 2.ヘッダ情報 -->
+        <div class="navbar-header">
+            <a class="navbar-brand">営業所マップDemo(本番)</a>
+        </div>
+        <!-- 3.リストの配置 -->
+        <ul class="nav navbar-nav">
+            <li class="active"><a href="#">メニュー1</a></li>
+            <li><a href="#">メニュー2</a></li>
+            <li><a href="#">メニュー3</a></li>
+        </ul>
+        <!-- 4.検索窓 -->
+				<form class="navbar-form">
+				    <div class="form-group">
+				        <input type="text" class="form-control" placeholder="こんな検索窓があるかも">
+				    </div>
+				    <button type="submit" class="btn btn-info">検索</button>
+				</form>
+    </div>
+</nav>    
+
+
 
     <div class="col-md-4">
 
